@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:tiles="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Create Rest Mock</title>
+</head>
+<body>
+	<div class='container h-100 d-flex justify-content-center'>
+		<div class="row text-white">
+			<div
+				class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto text-center form p-4">
+				<h1>
+					<span class="label label-success label-bs">Rest mock
+						Created!</span> <br /> <br /> 
+						<label
+						th:text="*{'The Mock URL: '}" class="label label-warning"></label>
+						<label
+						th:text="*{endPointUrl}" class="label label-info"></label>
+
+				</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
